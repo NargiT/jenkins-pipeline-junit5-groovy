@@ -1,0 +1,3 @@
+@Library("jenkins") _
+
+foo([:])
