@@ -12,9 +12,18 @@ plugins {
 }
 
 sourceSets {
-    vars {
+    jenkins {
         groovy {
-            srcDirs = ['vars']
+            srcDirs = ['src']
+        }
+    }
+
+    test {
+        groovy {
+            srcDirs = ['test']
+        }
+        resources {
+            srcDirs = ['test-resources']
         }
     }
 }
