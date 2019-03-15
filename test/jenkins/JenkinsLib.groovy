@@ -21,6 +21,7 @@ class JenkinsLib extends BaseRegressionTest {
         callStackPath = 'test-resources/callstacks/'
         def script = loadScript('foo.groovy')
         script.call([:])
-        testNonRegression( "returnTrue")
+
+        testNonRegression("returnTrue")
     }
 }
